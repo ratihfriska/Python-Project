@@ -1,18 +1,23 @@
 def ABC():
     try:
+        z=input('Masukkan nama file : ')
+        file=open(z,'a')
         while True:
-            xxx='XXXX\n'
+            print('Data yang mau ditambahkan: ',end='')
+            xxx=input()
             file.write(xxx)
-            print('Data yang mau ditambahkan: ',xxx)
             print('Mau lagi(y/n): ',end=' ')
             b=input()
             if b == 'y':
                 continue
-            if b == 'n':
+            elif b == 'n':
                 break
-    except ValueError():
+            else:
+                print('Input tidak valid')
+                break
+        file.close()
+    except OSError:
+        print('Input tidak valid atau file tidak ada')
+    except ValueError:
         print('Input tidak valid')
-namafile=input('Masukkan nama file : ')
-file=open(namafile,'a')
 ABC()
-file.close()
