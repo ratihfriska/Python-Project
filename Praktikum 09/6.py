@@ -13,7 +13,6 @@ print('N.AKHIR'.rjust(15,' '),end=' ')
 print('STATUS'.rjust(15,' '))
 print('-'*100)
 def data():
-    a=0
     b={}
     for n in nilai:
         b['nim']=n.get('nim')

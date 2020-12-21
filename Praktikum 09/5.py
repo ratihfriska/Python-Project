@@ -11,7 +11,6 @@ print('N.MID'.ljust(10,' '),end=' ')
 print('N.UAS'.rjust(10,' '))
 print('-'*70)
 def data():
-    a=0
     b={}
     for n in nilai:
         b['nim']=n.get('nim')
